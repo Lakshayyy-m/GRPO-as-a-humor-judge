@@ -117,3 +117,6 @@ This qwen2 model was trained 2x faster with [Unsloth](https://github.com/unsloth
 # Git Repo
 https://github.com/Lakshayyy-m/GRPO-as-a-humor-judge
 
+# Hugging Face
+https://huggingface.co/RoyVoy/GRPO-as-a-humour-Judge
+
