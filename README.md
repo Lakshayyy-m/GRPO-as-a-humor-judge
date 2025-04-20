@@ -40,14 +40,11 @@ pip install torch transformers safetensors gradio pandas unsloth
 ## Compile Commands (Execution/Inference)
 ``` 
 # Run on Google Colab
-from transformers import pipeline
+# Load model directly
+from transformers import AutoTokenizer, AutoModelForCausalLM
 
-messages = [
-    {"role": "user", "content": "Who are you?"},
-]
-pipe = pipeline("text-generation", model="RoyVoy/GRPO-as-a-humour-Judge")
-pipe(messages)
-python generate_title.py --abstract "Your research abstract here"
+tokenizer = AutoTokenizer.from_pretrained("RoyVoy/GRPO-as-a-humour-Judge")
+model = AutoModelForCausalLM.from_pretrained("RoyVoy/GRPO-as-a-humour-Judge")
 
 ```
 
